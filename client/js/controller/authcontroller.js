@@ -4,13 +4,15 @@ app.controller("AuthController",['$scope','$location','LoginService',function ($
         var username=$scope.username;
         var password=$scope.password;
         LoginService.login(username,password).then(function(data,err){
-        console.log(data);
+        console.log(data); 
         $location.path('/home');
+    }).catch(function(data,err){
+        alert("Username and password is invalid");
+    });
+       
 
             
-        });
-
-    }
+        };
     
 }]);
 

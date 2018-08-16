@@ -1,0 +1,21 @@
+<dir class="container">
+<div id="customers">
+  <h1>{{ user.firstname }}</h1>
+  <dl>
+    <dt>User_Id</dt>
+    <dd>{{user._id}}</dd>
+    <dt>FirstName</dt>
+    <dd>{{ user.firstname }}</dd>
+    <dt>LastName</dt>
+    <dd>{{ user.lastname }}</dd>
+    <dt>UserName</dt>
+    <dd>{{ user.username }}</dd>
+    <dt>Password</dt>
+    <dd>{{ user.password }}</dd>
+  </dl>
+</div>
+</dir>
+
+    <a [routerLink]="['/user-edit', user._id]">EDIT</a>
+    <button id="delbutton" (click)="deleteUser(user._id)">DELETE</button>
+  

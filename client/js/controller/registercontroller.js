@@ -1,4 +1,4 @@
-app.controller("RegisterController",['$scope','RegisterService',function ($scope,RegisterService) {
+app.controller("RegisterController",['$scope','RegisterService','$location', function ($scope,RegisterService,$location) {
     $scope.signup = function() {
             console.log("Signin");
         var firstname=$scope.firstname;

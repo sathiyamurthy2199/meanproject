@@ -1,5 +1,33 @@
-<h1 align="center">Home Page</h1>
-<center><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Large_bonfire.jpg" width="600" height="400"></img></center>
+
+<center>
+<!-- 	<img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Large_bonfire.jpg" width="600" height="400"></img><br>-->
+<div class="topnav">
+	<a href="#" ng-click="signout()">Logout</a></center>
+</div><br>
+
+<!-- <a href="#" ng-click="signout()">Logout</a></center>
+ -->
+<!-- 	<br><center><button id="viewbutton" ng-click="view()">ViewAll Users</button></center>
+ -->
+<center><table id="customers">
+ <thead>
+ <tr>
+<th>User_Id</th>
+ <th>Username</th>
+ <th>Action</th>
+
+ </tr>
+ </thead>
+ <tbody>
+ <tr ng-repeat = "user in user">
+ <td>{{user._id}}</td>
+ <td>{{user.username }}</td>
+ <td><a href="#/user-detail">Show details</a></td>
+
+ </tr>
+ </tbody>
+ </table>
+</center>
 <!-- <div><a href="#/login">Login</a>or<a href="#/register">Register</a></div></center> -->
 	
  

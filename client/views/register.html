@@ -1,18 +1,21 @@
 
-<h2 align="center">Register Form</h2>
+<div class="topnav">
+    <a href="#/login" ng-click="login()">Login</a></center>
+</div><br>
+<h2 align="center" style="margin-top: 66">Register Form</h2>
   <div class="container" ng-controller="RegisterController">
     <form ng-submit="signup()">
     <label><b>Firstname</b></label>
-    <input type="text" placeholder="Enter Firstname" ng-model="firstname" required><br>
+    <input type="text" class="registername" placeholder="Enter Firstname" ng-model="firstname" required><br>
 
     <label><b>Lastname</b></label>
-    <input type="text" placeholder="Enter Lastname" ng-model="lastname" required><br>
+    <input type="text" class="registername" placeholder="Enter Lastname" ng-model="lastname" required><br>
 
     <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" ng-model="username" required><br>
+    <input type="text" class="registername" placeholder="Enter Username" ng-model="username" required><br>
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" ng-model="password" required><br>
+    <input type="password" class="registerpassword" placeholder="Enter Password" ng-model="password" required><br>
         
     <button type="submit"  value="signup">submit</button>  
        
