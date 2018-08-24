@@ -13,7 +13,7 @@ angular.module('app').factory('RegisterService', function($http, $q) {
     .success(function(response) {
             deferred.resolve(response);
     }).error(function(err) {
-      deferred.reject(err);	
+      deferred.reject(err); 
    });
         return deferred.promise;
     }

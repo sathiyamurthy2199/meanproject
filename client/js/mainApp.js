@@ -1,5 +1,5 @@
 var app = angular.module("app", ['ngRoute']);
-console.log("HERE");
+
 app.config(['$routeProvider',function($routeProvider) {
 		$routeProvider
 		.when('/home', {
@@ -18,10 +18,18 @@ app.config(['$routeProvider',function($routeProvider) {
 				templateUrl : '../views/register.html',
 				controller  : 'RegisterController'
 			})
-			.when('/user-detail',{
+			.when('/home/:id',{
 				templateUrl : '../views/user-detail.html',
 				controller  : 'ViewController',
 				parent      : '/home'
+			})
+			.when('/edit/:id', {
+				templateUrl : '../views/edit.html',
+				controller : 'EditController'
+			})
+			.when('/create', {
+				templateUrl : '../views/create.html',
+				controller : 'RegisterController'
 			})
 
 		 .otherwise({redirectTo: '/login'});

@@ -4,17 +4,17 @@
       login: login
     };
     function login(username,password){
-  var deferred = $q.defer();
+      var deferred = $q.defer();
       // return username == 'sathiya' && password == '100133' ? true : false;
-     $http({
-        url: 'http://localhost:3000/login',
-        method: "POST",
-        data: {'username': username, 'password': password}
+      $http({
+                url: 'http://localhost:3000/login',
+                method: "POST",
+                data: {'username': username, 'password': password}
     })
-    .success(function(response) {
+      .success(function(response) {
             deferred.resolve(response);
     }).error(function(err) {
-      deferred.reject(err); 
+        deferred.reject(err); 
     });
         return deferred.promise;
     }
