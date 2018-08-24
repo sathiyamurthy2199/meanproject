@@ -1,6 +1,6 @@
 <style>
 
-}
+
 .topnav {
     list-style-type: none;
     margin: 0;
@@ -8,38 +8,37 @@
     overflow: hidden;
     background-color: #333;
 }
-.topnav{
+.topnav {
     overflow: hidden;
     background-color: green;
-    /* margin-top: -71px; */
+     margin-top: 0px; 
     text-align: right;
     padding-bottom: 20px;
     padding-right: 30px;
     position: fixed;
-    /* margin-left: -79px; */
-    /* margin-right: -36px; */
+    margin-left: -8px; 
+    margin-right: 0px; 
     width: 99%;
     padding-top: 20px;
     top: 0;
 
 }
 
-
-
-#customers {
+#table {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 51%;
-    margin-top: 90px;
+    width: 100%;
+    margin:30px auto;
+    
 }
 
-#customers td, #customers th {
+#table td, #table th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
 
-#customers th {
+#table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -48,44 +47,44 @@
 }
 
 .loginpassword {
-   width: 62%;
+   width: 57%;
     padding: 12px 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 20px;
-    margin-top: 40px;
+   
 }
 .loginname {
-   width: 62%;
+   width: 57%;
     padding: 12px 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-bottom: 20px;
+ 
 }
 .registername {
-    width: 62%;
+    width: 57%;
     padding: 12px 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-bottom: 20px;
 }
 .registerpassword {
-    width: 62%;
+    width: 57%;
     padding: 12px 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 20px;
-    margin-top: 40px;
 }
 
 
@@ -106,22 +105,33 @@
     color: white;
     padding: 12px 11px;
     margin: 42px 0;
-    margin-left: 485px;
+    margin-left: 9px;
+    border: none;
+    cursor: pointer;
+    width: 17%;
+    border-radius: 21px;
+
+}
+#editbutton{
+     background-color: #4CAF50;
+    color: white;
+    padding: 12px 11px;
+    margin: 42px 0;
+    margin-left: 240px;
     border: none;
     cursor: pointer;
     width: 7%;
     border-radius: 21px;
 
 }
-button {
+#button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 42px 0;
-    margin-left: 167px;
+    margin:33px auto;
     border: none;
     cursor: pointer;
-    width: 21%;
+    width: 15%;
     border-radius: 10px;
 }
 
@@ -146,10 +156,10 @@ img.avatar {
 }
 
 .container {
-          padding: 20px;
-    padding-left: 421px;
-    padding-right: 340px;
-    margin-top: -27px;
+   text-align: center;
+    margin: 80px auto;
+    width: 50%;
+    border-color: blue;
 }
 
 span.psw {

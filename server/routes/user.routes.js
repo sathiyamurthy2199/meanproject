@@ -10,14 +10,12 @@ module.exports = (app) => {
                 return res.status(500).send("It is not valid");
             }
             if(user) {
-                return res.status(200).send({"message":"User is authorized","data":user});
+                return res.status(200).send(user);
             }
             return res.status(401).send({"message":"User is unauthorized"});
         });
     });
-    // app.get('/', function(req, res) {
-    //     res.sendfile('./public/index.html');});
-    // Create a new Note
+    
     app.post('/signup', function(req, res){
          const user = new User({
         firstname: req.body.firstname,
@@ -26,7 +24,7 @@ module.exports = (app) => {
         password: req.body.password
     });
 
-    // Save Note in the database
+    // Save User in the database
     user.save()
     .then(data => {
         console.log("User added successfully")
@@ -38,7 +36,7 @@ module.exports = (app) => {
     });
     });
 
-    // Retrieve all Notes
+    // Retrieve all Users
     app.get('/findallUsers', function(req, res){
          User.find()
     .then(users => {
@@ -50,7 +48,7 @@ module.exports = (app) => {
     });
     });
 
-    // Retrieve a single Note with noteId
+    // Retrieve a single User with userId
     app.get('/findoneUser/:userId', function(req, res){
          User.findById(req.params.userId)
     .then(user => {
@@ -59,7 +57,7 @@ module.exports = (app) => {
                 message: "User not found with id " + req.params.userId
             });            
         }
-        res.send(user.firstname);
+        res.send(user);
     }).catch(err => {
         if(err.kind === 'ObjectId') {
             return res.status(404).send({
@@ -72,7 +70,7 @@ module.exports = (app) => {
     });
     });
 
-    // Update a Note with noteId
+    // Update a User with userId
     app.put('/updateUser/:userId', function(req, res){
          User.findByIdAndUpdate(req.params.userId, {
         firstname: req.body.firstname,
@@ -99,7 +97,7 @@ module.exports = (app) => {
     });
     });
 
-    // Delete a Note with noteId
+    // Delete a User with userId
     app.delete('/deleteUser/:userId', function(req, res){
         User.findByIdAndRemove(req.params.userId)
     .then(user => {
