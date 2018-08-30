@@ -101,6 +101,7 @@
 
 }
 #delbutton{
+<<<<<<< HEAD
      background-color: #4CAF50;
     color: white;
     padding: 12px 11px;
@@ -122,12 +123,37 @@
     cursor: pointer;
     width: 7%;
     border-radius: 21px;
+=======
+    background-color: #4CAF50;
+    color: black;
+    padding: 5px 21px;
+    margin: 33px auto;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    border-radius: 10px;
+}
+#editbutton{
+     background-color: #4CAF50;
+    color: black;
+    padding: 5px 21px;
+    margin: 33px 8px;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    border-radius: 10px;
+>>>>>>> 1de99c9... all commited!
 
 }
 #button {
     background-color: #4CAF50;
+<<<<<<< HEAD
     color: white;
     padding: 14px 20px;
+=======
+    color: black;
+    padding: 5px 21px;
+>>>>>>> 1de99c9... all commited!
     margin:33px auto;
     border: none;
     cursor: pointer;
@@ -161,6 +187,24 @@ img.avatar {
     width: 50%;
     border-color: blue;
 }
+<<<<<<< HEAD
+=======
+dl {
+    display: block;
+    margin-right: 100px;
+    margin-bottom: 80px;
+}
+
+dd { 
+    display: block;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    margin-left: 229px;
+    margin-top: -15px;
+}
+
+
+>>>>>>> 1de99c9... all commited!
 
 span.psw {
     float: right;

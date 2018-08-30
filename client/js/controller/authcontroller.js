@@ -4,11 +4,19 @@ app.controller("AuthController",['$scope','$location','LoginService','$rootScope
         var username=$scope.username;
         var password=$scope.password;
         LoginService.login(username,password).then(function(data,err){
+<<<<<<< HEAD
         console.log(data.username); 
+=======
+         
+>>>>>>> 1de99c9... all commited!
         $rootScope.current_user = data.username;
                 $rootScope.sess = data;
                 sessionStorage.setItem('current_user', $rootScope.sess.username);
                 $rootScope.current_user = sessionStorage.current_user;
+<<<<<<< HEAD
+=======
+                
+>>>>>>> 1de99c9... all commited!
 
         $location.path('/home');
     }).catch(function(data,err){

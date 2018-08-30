@@ -1,18 +1,28 @@
+<<<<<<< HEAD
 
 
 <div class="topnav">Signed in as {{current_user}}
    <a href="#" ng-click="signout()">Logout</a>
+=======
+<div class="topnav">Signed in as {{current_user}}
+	 <a href="#" ng-click="signout()">Logout</a>
+>>>>>>> 1de99c9... all commited!
 </div><br>
 
 <h1 style="margin-top:  50px; color: red;">USER LIST</h1>
 <a href=#/create><img src="http://www.iconarchive.com/download/i12440/gakuseisean/ivista-2/Alarm-Plus.ico"style=" height: 49px;
     margin-left: 172px;
     margin-top: -65px;"></a>
+<<<<<<< HEAD
    <div ng-init="view()">
+=======
+	 <div ng-init="view()">
+>>>>>>> 1de99c9... all commited!
 
 <center>
   Search   :   <input type='text' ng-model='searchText' placeholder="Search " />
   <div ng-controller="testController">
+<<<<<<< HEAD
   <table id="table">
  <thead>
 
@@ -22,16 +32,36 @@
     <th>Username</th>
     <th>Action</th>
   </tr>
+=======
+	<table id="table">
+ <thead>
+
+ 	<tr>
+ 		<th>S.no</th>
+		<th>UserId</th>
+ 		<th>Username</th>
+ 		<th>Action</th>
+ 	</tr>
+>>>>>>> 1de99c9... all commited!
 
  </thead>
  <tbody>
 
+<<<<<<< HEAD
   <tr ng-repeat = "user in user | startFrom:currentPage*pageSize | limitTo:pageSize | filter:searchText">
     <td>{{$index + 1}}</td>
     <td>{{user._id}}</td>
     <td>{{user.username }}</td>
     <td><a href="#/home/{{user._id}}">Show details</a></td>
   </tr>
+=======
+ 	<tr ng-repeat = "user in user | orderBy : '-createdAt'  | filter:searchText | startFrom:currentPage*pageSize | limitTo:pageSize">
+ 		<td>{{$index + 1}}</td>
+ 		<td>{{user.userid}}</td>
+ 		<td>{{user.username }}</td>
+ 		<td><a href="#/home/{{user._id}}">&#9998; Show details</a></td>
+ 	</tr>
+>>>>>>> 1de99c9... all commited!
 
  </tbody>
  </table> 
@@ -51,4 +81,8 @@
       Next
     </button>
  </center>
+<<<<<<< HEAD
  </div>
+=======
+ </div>
+>>>>>>> 1de99c9... all commited!

@@ -18,6 +18,10 @@ module.exports = (app) => {
     
     app.post('/signup', function(req, res){
          const user = new User({
+<<<<<<< HEAD
+=======
+        userid: req.body.userid,
+>>>>>>> 1de99c9... all commited!
         firstname: req.body.firstname,
         lastname: req.body.lastname,
         username: req.body.username,
@@ -73,6 +77,10 @@ module.exports = (app) => {
     // Update a User with userId
     app.put('/updateUser/:userId', function(req, res){
          User.findByIdAndUpdate(req.params.userId, {
+<<<<<<< HEAD
+=======
+        userid: req.body.userid,
+>>>>>>> 1de99c9... all commited!
         firstname: req.body.firstname,
         lastname: req.body.lastname,
         username: req.body.username,

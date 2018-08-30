@@ -40,7 +40,11 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 // Connecting to the database
+<<<<<<< HEAD
 mongoose.connect(dbConfig.url)
+=======
+mongoose.connect(dbConfig.url,  {useNewUrlParser: true})
+>>>>>>> 1de99c9... all commited!
 .then(() => {
     console.log("Successfully connected to the database");    
 }).catch(err => {
@@ -48,11 +52,14 @@ mongoose.connect(dbConfig.url)
     process.exit();
 });
 
+<<<<<<< HEAD
  // define a simple route
  // app.post('/', function(req, res){
  //     res.sendFile(__dirname + '/' + '../client/login.html');
  // });
 
+=======
+>>>>>>> 1de99c9... all commited!
 require('./server/routes/user.routes.js')(app);
 
 // listen for requests
