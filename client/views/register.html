@@ -1,0 +1,30 @@
+<div class="topnav">Already User
+    <a href="#/login" ng-click="login()">Login</a>
+</div><br>
+
+  <div class="container" ng-controller="RegisterController">
+    <form ng-submit="signup()">
+        <h2 align="center">Register Form</h2>
+
+        <label><b>UserId</b></label>
+    <input type="number" class="registername" placeholder="Enter UserId" ng-model="userid" required><br>
+
+    <label><b>Firstname</b></label>
+    <input type="text" class="registername" placeholder="Enter Firstname" ng-model="firstname" required><br>
+
+    <label><b>Lastname</b></label>
+    <input type="text" class="registername" placeholder="Enter Lastname" ng-model="lastname" required><br>
+
+    <label><b>Username</b></label>
+    <input type="text" class="registername" placeholder="Enter Username" ng-model="username" required><br>
+
+    <label><b>Password</b></label>
+    <input type="password" class="registerpassword" placeholder="Enter Password" ng-model="password" required><br>
+        
+    <button id="button" type="submit"  value="signup">submit</button>  
+       
+    </div>  
+</form>
+
+ 
+
